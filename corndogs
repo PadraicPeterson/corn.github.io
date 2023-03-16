@@ -1,0 +1,608 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+  <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+
+  <meta name="apple-mobile-web-app-title" content="CodePen">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+  <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
+
+
+  
+  <title>CodePen - Website Project corndogs</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+  
+<style>
+header{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+
+
+
+.skip-link screen-reader-text{
+  display: flex;
+}
+
+h1{
+  z-index: 2;
+  font-size: 2.3em;
+}
+.header-wrapper {
+	background-color: purple;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.brand {
+	display: flex;
+  transition: 0.55s all ease;
+  transform-origin: left bottom;
+}
+.brand{
+  transition: 0.4s all ease;
+}
+.brand:hover {
+  transform:scale(1.05);
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+nav ul li{
+  transition: 0.3s all ease;
+}
+.nb:hover{
+  background-color: rgb(0, 0, 0, 0.1);
+}
+nav ul li:hover{
+  transform:scale(1.08);
+}
+
+
+h1 {
+	font-weight: 100;
+}
+
+.#{ background-color: none; }
+
+.paladin {
+  font-weight: 900;
+	display: flex;
+	letter-spacing: 2px;
+	float: left;
+  left: 14px;
+  font-family: 'Lato', sans-serif;
+}
+
+.webgroup {
+	display: flex;
+	font-family: "Arial", Helvetica, Sans-serif;
+	font-size: 23px;
+	float: left;
+  position: absolute;
+  top: 65px;
+  left: 14px;
+}
+
+.wordmark {
+	display: flex;
+	flex-direction: column;
+  float: left;
+}
+
+header {
+	text-decoration: none;
+	display: flex;
+	text-align: center;
+}
+
+.container {
+	font-family: "Arial", Helvetica, serif;
+	display: flex;
+	background: purple;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	align-items: center;
+}
+
+div a {
+	font-family: "Arial", Helvetica, serif;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+}
+
+.brand {
+	text-decoration: none;
+	font-family: "Times New Roman", Times, serif;
+	color: white;
+	background: purple;
+	display: flex;
+	justify-content: flex-start;
+}
+
+nav ul {
+	text-decoration: none;
+	display: flex;
+	float: right;
+	position: absolute;
+	background-color: purple;
+	right: 10px;
+  top: 25px;
+}
+
+.header {
+	display: flex;
+	position: absolute;
+	left: 1px;
+	right: 1px;
+	top: 10px;
+	height: 100px;
+	text-align: center;
+}
+
+primary-nav-mobile {
+	display: flex;
+	position: absolute;
+	right: 10px;
+}
+
+li {
+	display: flex;
+	text-decoration: none;
+	list-style: none;
+	padding-right: 10px;
+  padding-left: 10px;
+	flex-direction: row-reverse;
+	right: 0;
+	color: white;
+}
+
+.primary-nav__cta {
+	background-color: red;
+	border: none;
+	color: white;
+	padding: 15px 15px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 15px;
+}
+
+
+
+@media screen and (max-width: 650px) {
+	li a {
+		display: none;
+  }
+  #menu-button {
+		display: inline-block;
+    position: relative;
+    right: 0px;
+    float: right;
+    align-self: end;
+	}
+  #menu{
+    display: block;
+  }
+}
+  
+  
+
+
+@media screen and (max-width: 650px) {
+	.primary-nav__cta {
+		visibility: hidden;
+    display: none;
+	}
+
+}
+
+@media screen and (min-width: 650px) {
+  #menu-button {
+		display: none;
+	}
+  #menu{
+    display: none;
+  }
+}
+
+
+
+a:hover {
+	color: orange;
+}
+
+
+
+
+
+.top{
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
+.header1{
+  padding: 10px;
+  font-size: 2em;
+}
+
+p{
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5em;
+  text-indent: 75px;
+  padding: 10px;
+  font-size: 1.4em;
+}
+
+
+.first{
+  background: purple;
+}
+#menu-button{
+  
+  float: right;
+  background: indigo;
+  width: 50px;
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+  float: right;
+  cursor: pointer;
+  transition: all linear .3s;
+  padding: 4px;
+  margin: 35px;
+  z-index: 1;
+}
+
+#menu-button.active{
+  background: blueviolet;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#line-1,#line-2,#line-3{
+  
+  width: 90%;
+  background: #fff;
+  height: 8px;
+  margin: 4px auto;
+  border-radius: 2px;
+  transition: all linear .3s;
+}
+
+#line-1.active{
+-webkit-transform: translate(0px,12px) rotate(45deg);
+transform: translate(0px,12px) rotate(45deg);
+}
+
+#line-2.active{
+opacity: 0;
+}
+
+#line-3.active{
+-webkit-transform: translate(0px, -12px) rotate(-45deg);
+transform: translate(0px, -12px) rotate(-45deg);
+}
+
+#menu{
+  background: indigo;
+  width: 150px;
+  padding: 10px;
+  padding-top: 30px;
+  color: #fff;
+  font-family: arial;
+  font-size: 1.5rem;
+  display: none;
+  position: absolute;
+  right: 33px;
+  top: 110px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#menu ul{
+  list-style: none;
+}
+
+#menu ul li{
+  margin: 8px 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.parallax-item:nth-child(2) {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("data:image/png;base64,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");
+  background-size: cover;
+}
+.parallax-item:nth-child(4) {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("https://garden.spoonflower.com/c/11060271/p/f/m/RW4WNL_8io5iGinEVbPb5wGWkNiJdAJJdL1XHODgOVphDTFVyEPfi5B-LYDn/Corndog%20on%20Pink.jpg");
+  background-size: cover;
+}
+.parallax-item:nth-child(6) {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuN9wc4Mu5GwO7PAXjWStYsr1jH0tO23HIXA&usqp=CAU");
+  background-size: cover;
+}
+.parallax-item:nth-child(8) {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("https://i.ibb.co/vVsqWkg/image-1.png");
+  background-size: fit;
+}
+.parallax-item{
+  margin: 25px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        footer section {
+            padding: 60px 0;
+           /* min-height: 100vh;*/
+        }
+ footer ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+footer .contact-area {
+    border-bottom: 1px solid #353C46;
+}
+
+.contact-content p {
+    font-size: 15px;
+    margin: 30px 0 60px;
+    position: relative;
+}
+
+.contact-content p::after {
+    background: #353C46;
+    bottom: -30px;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 80%;
+}
+
+.contact-content h6 {
+    color: #8b9199;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contact-content span {
+    color: #353c47;
+    margin: 0 10px;
+}
+
+.contact-social {
+    margin-top: 30px;
+}
+
+.contact-social > ul {
+    display: inline-flex;
+}
+
+.contact-social ul li a {
+    border: 1px solid #8b9199;
+    color: #8b9199;
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+    padding-top: 7px;
+    transition: all 0.4s ease 0s;
+    width: 40px;
+}
+
+.contact-social ul li a:hover {
+    border: 1px solid #FAB702;
+    color: #FAB702;
+}
+
+.contact-content img {
+    max-width: 210px;
+}
+
+footer section, footer {
+    background: #1A1E25;
+    color: #868c96;
+}
+
+footer p {
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer img {
+    width: 44px;
+}
+</style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+<div class="header-wrapper">
+   <header class="site-header">
+      <!-- <a class="skip-link screen-reader-text" href="#primary">Skip to content</a> -->
+     
+      <div class="container" >
+         <a href="https://cdpn.io/pen/debug/VwGMKVb" class="brand">
+           
+            <h1 class="wordmark">
+              <div class = "paladin" style = "padding: 20px;"><strong>CORN</strong></div>
+            </h1>
+              
+            </a>
+            <nav class="primary-nav-mobile" media="screen and (max-width: 650px)">
+               <ul>
+                  <li class = "nb"><a href = "https://cdpn.io/pen/debug/VwGMKVb" media="screen and (max-width: 650px)">Corn</a></li>
+                 <li class = "nb"><a href="https://cdpn.io/pen/debug/oNPyWjQ" media="screen and (max-width: 650px)">Corndogs</a></li>
+                 <li class = "nb"><a href="https://cdpn.io/pen/debug/oNPyWZV" media="screen and (max-width: 650px)">Contact</a></li>
+                 <li class = "nb"><a href="https://cdpn.io/pen/debug/RwYJVQN" media="screen and (max-width: 650px)">About</a></li>
+                 <li class="primary-nav__cta"><a href="https://stopandshop.com/groceries/produce/fresh-vegetables/corn.html" media="screen and (max-width: 650px)"><strong>Buy</strong></a></li> </ul> 
+           </nav></ul>
+       
+           
+      </div>
+  
+  <div media="screen and (max-width: 650px)">
+            <div id="menu-button">
+             <div id="line-1"></div>
+              <div id="line-2"></div>
+              <div id="line-3"></div>
+              </div>
+                <div id="menu">
+                <ul>
+                <a href="https://cdpn.io/pen/debug/VwGMKVb"><li>Corn</li></a>
+                  <a href="https://cdpn.io/pen/debug/oNPyWjQ"><li>Corndogs</li></a>
+                <a href="https://cdpn.io/pen/debug/oNPyWZV"><li>Contact</li></a>
+                  <a href="https://cdpn.io/pen/debug/RwYJVQN"><li>About</li></a>
+                  <a href="https://stopandshop.com/groceries/produce/fresh-vegetables/corn.html"><li>Buy</li></ul></a>
+</div></div>
+  <div media="screen and (max-width: 650px)" class  = "search">
+  </div>
+   </header>
+</div>
+<h1 class = "top">Corndogs</h1>
+<section>
+  <div class="parallax-item">
+<br>
+    <h2 class = "header1">Description</h2></div>
+  <div id="parallax" class="parallax-item">
+<p>A corn dog is a sausage on a stick coated in a thick layer of cornmeal batter and deep-fried. The sausage used in a corn dog is usually the same types that are used in hot dogs. It is a popular type of fast food or street food. A corn dog consists of processed meat on a stick that is dipped in corn meal batter and deep-fried. It is a wildly popular snack (and hot dog variation) throughout the United States of America. Corn dogs are typically found at county fairs, carnivals, sports arenas, food courts in malls, and roadside eateries. This flavorful snack was first popularized by Neil Fletcher at the Texas State Fair in 1942, although the vendors at the Minnesota State Fair claim that they invented it in 1941 when it was known as a Pronto Pup. Today, corn dogs are often eaten with yellow mustard, pickles, sauerkraut, or mayonnaise, and there are numerous varieties of the snack throughout the world, namely in Argentina, Australia, New Zealand, and Japan. Convenient, simple, and hard to resist, corn dogs even has its own day, known as the National Corndog Day, occuring on the first Saturday of March Madness (basketball championship) every year.</p>
+  </div>
+  <div class = "parallax-item">
+    <h2 class = "header1">History</h2>
+      
+    </div>
+  <div id = "parallax1" class = "parallax-item">
+<p>Newly arrived German immigrants in Texas, who were sausage-makers finding resistance to the sausages they used to make, have been credited with introducing the corn dog to the United States, though the serving stick came later. A US patent filed in 1927, granted in 1929, for a Combined Dipping, Cooking, and Article Holding Apparatus, describes corn dogs, among other fried food impaled on a stick. A number of current corn dog vendors claim responsibility for the invention and/or popularization of the corn dog. Carl and Neil Fletcher lay such a claim, having introduced their "Corny Dogs" at the State Fair of Texas sometime between 1938 and 1942. Pronto Pup of Rockaway Beach, Oregon, claims to have invented the corn dog in 1939. Cozy Dog Drive-in, in Springfield, Illinois, claims to have been the first to serve corn dogs on sticks, on June 16, 1946. Also in 1946, Dave Barham opened the first location of Hot Dog on a Stick at Muscle Beach in Santa Monica, California.</p>
+  </div>
+  <div class = "parallax-item">
+    <h2 class = "header1">Today</h2></div><div id = "parallax2"class = "parallax-item">
+  <p>Today, corn dogs are often served as street food or as fast food. For the best and freshest preparation, some vendors or restaurateurs dip and fry their corn dogs just before serving. Some corn dog purveyors sell pre-made frozen corn dogs, which are then thawed and fried again, or browned in an oven. Corn dogs can also be found at almost any supermarket and convenience store store in North America as frozen foods as well as served hot and ready to eat. Pre-made frozen corn dogs can also be heated in a microwave oven, but the cornbread coating will lack texture.</p>
+  </div>  
+  </section>
+
+
+
+
+ <footer>
+        <p>Copyright &copy; CORN All Rights Reserved.</p>
+   <br>
+    </footer>
+  
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script id="rendered-js" >
+$("#menu-button").click(function(){
+  $(this).toggleClass("active");
+  $("#line-1").toggleClass("active");
+  $("#line-2").toggleClass("active");
+  $("#line-3").toggleClass("active");
+  $("#menu").slideToggle("slow");
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const parallax = document.getElementById("parallax");
+
+// Parallax Effect for DIV 1
+window.addEventListener("scroll", function () {
+  let offset = window.pageYOffset;
+  parallax.style.backgroundPositionY = offset * -0.4 + "px";});
+
+const parallax1 = document.getElementById("parallax1");
+
+// Parallax Effect for DIV 2
+window.addEventListener("scroll", function () {
+  let offset = window.pageYOffset;
+  parallax1.style.backgroundPositionY = offset * -0.4 + "px";});
+
+
+const parallax2 = document.getElementById("parallax2");
+
+// Parallax Effect for DIV 3
+window.addEventListener("scroll", function () {
+  let offset = window.pageYOffset;
+  parallax2.style.backgroundPositionY = offset * -0.4 + "px";});
+
+const parallax3 = document.getElementById("parallax3");
+
+// Parallax Effect for DIV 4
+window.addEventListener("scroll", function () {
+  let offset = window.pageYOffset;
+  parallax3.style.backgroundPositionY = offset * -0.4 + "px";});
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
